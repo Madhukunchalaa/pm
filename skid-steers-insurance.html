@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insurance Page</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+</head>
+<body>
+<!-- Navbar Section -->
+
+<nav class="navbar navbar-expand-lg bg-white">
+  <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.webp" alt="Logo">
+      </a>
+      <!-- Hamburger Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav m-auto">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                  <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                      <li><a class="dropdown-item" href="earth-moving-insurance.html">Earth Moving Insurance</a></li>
+                      <li><a class="dropdown-item" href="skid-steers-insurance.html">Skid Steers Insurance</a></li>
+                      <li><a class="dropdown-item" href="bulldozer.html">Bulldozer Insurance</a></li>
+                      <li><a class="dropdown-item" href="excavator.html">Excavator Insurance</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="claims.html">Claims</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+          </ul>
+          <!-- Call Button -->
+          <div class="ms-3 d-flex align-items-center">
+              <a class="get-quote-btn" href="contact.html">Get Quote</a>
+              <div class="ms-4 navbar-text">
+                  <i class="bi bi-headset"></i> NEED HELP? CALL US <br>
+                  <span class="phone-number"> <a  href="tel:1300 170 328">1300 170 328</a></span>
+              </div>
+          </div>
+      </div>
+  </div>
+</nav>
+    <section class="i-hero-skidsteers">
+        <div class="i-hero-overlay"></div>
+        <div class="i-hero-content container">
+            <h1>Secure Your Skid Steer Investment: <br>Get Ultimate Protection</h1>
+            <p>Top-Notch Comprehensive Coverage against Unforeseen Risks for Your Skid Steer Machinery! </p>
+            <a href="#" class="btn-custom">➜ Get Quote</a>
+        </div>
+    </section>
+
+    <section class="service-why-section">
+        <div class="service-container">
+            <div class="service-row">
+                <div class="service-col">
+                    <div class="service-card service-first-card">
+                        <i class="service-arrow">➜</i>
+                        <h2 class="service-heading">WE’RE YOUR SKID STEER’S SAFETY NET</h2>
+                    </div>
+                </div>
+                <div class="service-col">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img width="50" src="assets/images/instant-messaging-1-150x150.webp" alt="">
+                        </div>
+                        <h5 class="service-title">Speedy Solutions</h5>
+                        <p class="service-text">Obtain Instant Quotes Tailored to Your Skid Steer Insurance Requirements in a Snap.</p>
+                    </div>
+                </div>
+                <div class="service-col">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img width="50" src="assets/images/customer-service-150x150.webp" alt="">
+                        </div>
+                        <h5 class="service-title">Relentless Support</h5>
+                        <p class="service-text">Our Dedicated Team Ensures Continued Assistance for a Seamless Skid Steers Insurance
+                            Experience.</p>
+                    </div>
+                </div>
+                <div class="service-col">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img width="50" src="assets/images/claim-150x150.webp" alt="">
+                        </div>
+                        <h5 class="service-title">Efficient Claims</h5>
+                        <p class="service-text">Experience Expedited Claim Processing Insurance for Skid Steers for Prompt Resolution and
+                            Minimal Downtime.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="i-form-section m-4">
+        <div class="container">
+            <h2 class="text-center">Quick Quote</h2>
+            <form>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="name">Name <span>(Required)</span></label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="address">Full Address <span>(Required)</span></label>
+                        <input type="text" id="address" class="form-control" placeholder="Enter your address" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="contact">Contact Number <span>(Required)</span></label>
+                        <input type="text" id="contact" class="form-control" placeholder="Enter your contact number" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email">Email <span>(Required)</span></label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="ctp">CTP Insurance start date/renewal date <span>(Required)</span></label>
+                        <input type="date" id="ctp" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="billing">Billing Number <span>(Required)</span></label>
+                        <input type="text" id="billing" class="form-control" placeholder="Enter your billing number" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="plate">Plate Number <span>(Required)</span></label>
+                        <input type="text" id="plate" class="form-control" placeholder="Enter plate number" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="vin">VIN number/Chassis number <span>(Required)</span></label>
+                        <input type="text" id="vin" class="form-control" placeholder="Enter VIN/Chassis number" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="customer">Customer number <span>(Required)</span></label>
+                        <input type="text" id="customer" class="form-control" placeholder="Enter customer number" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="vehicle">Is the vehicle <span>(Required)</span></label>
+                        <select id="vehicle" class="form-select" required>
+                            <option value="">Please Select</option>
+                            <option value="private">Private</option>
+                            <option value="commercial">Commercial</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+                <h2 class="text-center">Vehicle details</h2>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="manufacture-year">Year of manufacture? (refer RMS registration paper)<span>(Required)</span></label>
+                        <input type="text" id="manufacture-year" class="form-control" placeholder="Enter year of manufacture" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="make">Make of vehicle? <span>(Required)</span></label>
+                        <input type="text" id="make" class="form-control" placeholder="Enter make of vehicle" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="shape">Vehicle shape? (this is noted as a 3-letter code on the bottom of your registration paper)<span>(Required)</span></label>
+                        <input type="text" id="shape" class="form-control" placeholder="Enter vehicle shape" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="gvm">Vehicle GVM <span>(Required)</span></label>
+                        <select id="gvm" class="form-select" required>
+                            <option value="">Please Select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="gvm">Vehicle usage? (this is noted as a 4-letter code on the bottom of your RMS papers) <span>(Required)</span></label>
+                        <select id="gvm" class="form-select" required>
+                            <option value="">Please Select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="postcode">At what postcode do you garage the vehicle? <span>(Required)</span></label>
+                        <input type="text" id="postcode" class="form-control" placeholder="Enter postcode" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="suburb">At what suburb do you garage the vehicle? <span>(Required)</span></label>
+                        <input type="text" id="suburb" class="form-control" placeholder="Enter suburb" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="customer-type">What type of customer are you? <span>(Required)</span></label>
+                        <select id="customer-type" class="form-select" required>
+                            <option value="">Please Select</option>
+                            <option value="individual">Individual / sole trader</option>
+                            <option value="company">Company</option>
+                            <option value="used car dealer">Used Car Dealer</option>
+                            <option value="fleet">Fleet</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="customer-type">Fleet What duration of insurance would you like?                            <span>(Required)</span></label>
+                        <select id="customer-type" class="form-select" required>
+                            <option value="">Please Select</option>
+                            <option value="12 months">12 Months</option>
+                            <option value="6 months">6 Months</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="tax-credit">Are you entitled to an input tax credit? <span>(Required)</span></label>
+                        <select id="tax-credit" class="form-select" required>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-end">
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="insurance-offer">
+        <div class="container">
+            <div class="background-pattern"></div>
+            <h2>What Insurance Do We Offer?</h2>
+            <p>With Plant Machinery Insurance, you can find a vast list of skid steer insurance policy options, which
+                can also be customized as per your needs. Our personal skid steer insurance or business skid loader
+                insurance offerings include:</p>
+            <div class="row g-4">
+                
+                <!-- Skid Steer Equipment Insurance (No Changes) -->
+                <div class="col-md-4 col-lg-4 mt-5">
+                    <div class="insurance-card">
+                        <!-- New icon for Skid Steer Equipment Insurance -->
+                        <svg style="float: left;" class="brxe-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 57">
+                          <!-- Skid steer body -->
+                          <path fill="#000000" d="M10,38 h25 v-12 l4,-6 v-5 h-6 l-5,6 h-10 l-5,5 v12 z"/>
+                          
+                          <!-- Bucket/attachment -->
+                          <path fill="#000000" d="M35,20 h8 v8 h-8 z M43,24 h5 v-4 h-5 z"/>
+                          
+                          <!-- Tracks/wheels -->
+                          <rect fill="#000000" x="8" y="38" width="30" height="6" rx="1"/>
+                          <rect fill="#ffffff" x="10" y="40" width="4" height="2" rx="1"/>
+                          <rect fill="#ffffff" x="16" y="40" width="4" height="2" rx="1"/>
+                          <rect fill="#ffffff" x="22" y="40" width="4" height="2" rx="1"/>
+                          <rect fill="#ffffff" x="28" y="40" width="4" height="2" rx="1"/>
+                          
+                          <!-- Operator cab -->
+                          <rect fill="#ffffff" x="18" y="22" width="10" height="8" rx="1"/>
+                          <line stroke="#000000" stroke-width="1" x1="23" y1="22" x2="23" y2="30"/>
+                          
+                          <!-- Protection shield/insurance symbol -->
+                          <circle fill="#ffffff" cx="40" cy="40" r="10"/>
+                          <path fill="#000000" d="M40,32 C36,34 32,36 32,36 L32,43 C32,48 40,52 40,52 C40,52 48,48 48,43 L48,36 C48,36 44,34 40,32 Z"/>
+                          <path fill="#ffffff" d="M37,38 h6 v2 h-6 z M37,42 h6 v2 h-6 z"/>
+                        </svg>
+                        <h5>Skid Steer Equipment Insurance</h5>
+                        <p>Comprehensive coverage protecting your skid steer from accidental damage, theft, and breakdowns.</p>
+                    </div>
+                </div>
+    
+                <!-- Liability Insurance (No Changes) -->
+                <div class="col-md-4 col-lg-4 mt-5">
+                    <div class="insurance-card">
+                        <!-- New icon for Liability Insurance -->
+                        <svg style="float: left;" class="brxe-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 57">
+                          <!-- Skid steer -->
+                          <path fill="#000000" d="M5,40 h20 v-10 l4,-4 v-4 h-4 l-4,4 h-8 l-4,4 v10 z"/>
+                          <rect fill="#000000" x="3" y="40" width="24" height="4" rx="1"/>
+                          
+                          <!-- Person silhouette -->
+                          <circle fill="#000000" cx="40" cy="18" r="4"/>
+                          <path fill="#000000" d="M35,25 h10 v9 h-10 z M38,34 v8 M42,34 v8"/>
+                          
+                          <!-- Warning/caution sign -->
+                          <path fill="#ffffff" d="M40,42 l-12,-20 h24 z"/>
+                          <path fill="#000000" d="M40,42 l-10,-17 h20 z"/>
+                          <path fill="#ffffff" d="M40,26 v8 M40,36 v2"/>
+                          
+                          <!-- Legal/protection symbol -->
+                          <circle fill="#ffffff" cx="20" cy="22" r="7"/>
+                          <path fill="#000000" d="M20,17 v10 M15,22 h10"/>
+                          <path fill="none" stroke="#000000" stroke-width="1.5" d="M13,15 h14 v14 h-14 z" stroke-dasharray="2,1"/>
+                        </svg>
+                        <h5>Liability Insurance</h5>
+                        <p>Safeguard against third-party claims for property damage or bodily injury caused by your skid steer's operation.</p>
+                    </div>
+                </div>
+    
+                <!-- Equipment Breakdown Coverage (No Changes) -->
+                <div class="col-md-4 col-lg-4 mt-5">
+                    <div class="insurance-card">
+                        <!-- New icon for Equipment Breakdown Coverage -->
+                        <svg style="float: left;" class="brxe-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 57">
+                          <!-- Skid steer with broken/damaged parts -->
+                          <path fill="#000000" d="M8,40 h22 v-12 l5,-5 v-5 h-5 l-5,5 h-10 l-4,4 v13 z"/>
+                          <rect fill="#000000" x="6" y="40" width="26" height="5" rx="1"/>
+                          
+                          <!-- Broken part/crack -->
+                          <path fill="none" stroke="#ffffff" stroke-width="1.5" d="M15,28 l2,3 l-3,2 l2,2 l-2,3" stroke-linecap="round"/>
+                          <path fill="none" stroke="#ffffff" stroke-width="1.5" d="M25,23 l-1,3 l-2,-1 l-2,3 l-3,-2" stroke-linecap="round"/>
+                          
+                          <!-- Wrench tool -->
+                          <path fill="#ffffff" d="M39,15 c2,-2 5,-2 7,0 c2,2 2,5 0,7 l-15,15 l-7,-7 z"/>
+                          <circle fill="#000000" cx="43" cy="19" r="2"/>
+                          <path fill="#000000" d="M24,37 l4,-4 l3,3 l-4,4 z"/>
+                          
+                          <!-- Gear -->
+                          <circle fill="#ffffff" cx="35" cy="35" r="8"/>
+                          <circle fill="#000000" cx="35" cy="35" r="6"/>
+                          <circle fill="#ffffff" cx="35" cy="35" r="2"/>
+                          <path fill="#ffffff" d="M35,27 v-3 M35,46 v-3 M27,35 h-3 M46,35 h-3 M29,29 l-2,-2 M43,43 l-2,-2 M43,29 l2,-2 M29,43 l2,-2"/>
+                        </svg>
+                        <h5>Equipment Breakdown Coverage</h5>
+                        <p>Insurance for mechanical failures, ensuring your skid steer is shielded from unexpected repair expenses.</p>
+                    </div>
+                </div>
+    
+                <!-- Rental Reimbursement Coverage (Updated Icon) -->
+                <div  class="col-md-4 col-lg-4 mt-5">
+                    <div class="insurance-card">
+                        <!-- New icon for rental reimbursement -->
+                        <svg style="float: left;" class="brxe-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 57">
+                          <!-- Skid steer silhouette -->
+                          <path fill="#000000" d="M8,42 h22 v-12 l5,-5 v-6 h-5 l-5,5 h-10 l-4,4 v14 z"/>
+                          
+                          <!-- Wheels/tracks -->
+                          <rect fill="#000000" x="6" y="42" width="27" height="5" rx="1"/>
+                          
+                          <!-- Dollar sign -->
+                          <circle fill="#ffffff" cx="40" cy="20" r="11"/>
+                          <circle fill="#000000" cx="40" cy="20" r="9"/>
+                          <path fill="#ffffff" d="M40,14 c2,0 3.5,1 3.5,3 c0,4 -7,2 -7,6 c0,2 1.5,3 3.5,3 M40,12 v2 M40,28 v-2" stroke="#ffffff" stroke-width="1.5"/>
+                          
+                          <!-- Circular arrow indicating replacement/reimbursement -->
+                          <path fill="none" stroke="#ffffff" stroke-width="2" d="M25,25 a20,10 0 0 0 15,-5" stroke-linecap="round"/>
+                          <path fill="#ffffff" d="M43,18 l-4,-5 l0,3 l-4,0 l0,4 l4,0 l0,3 z"/>
+                        </svg>
+                        <h5>Rental Reimbursement Coverage</h5>
+                        <p>If your skid steer is out of commission due to an accident or repair, this coverage can help with rental expenses for a temporary replacement.</p>
+                    </div>
+                </div>
+    
+                <!-- Personal Injury Protection (Updated Icon) -->
+                <div class="col-md-4 col-lg-4 mt-5">
+                    <div class="insurance-card">
+                        <!-- New icon for personal injury protection -->
+                        <svg style="float: left;" class="brxe-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 57">
+                          <!-- Shield shape -->
+                          <path fill="#000000" d="M27.5,5 C20,8 12.5,11 12.5,11 L12.5,25 C12.5,35 27.5,45 27.5,45 C27.5,45 42.5,35 42.5,25 L42.5,11 C42.5,11 35,8 27.5,5 Z"/>
+                          
+                          <!-- Person silhouette -->
+                          <circle fill="#ffffff" cx="27.5" cy="20" r="5"/>
+                          <path fill="#ffffff" d="M27.5,25 L27.5,37 M24,29 L31,29 M20,39 L24,32 M35,39 L31,32"/>
+                          
+                          <!-- Medical cross -->
+                          <rect fill="#ffffff" x="25" y="10" width="5" height="15" rx="1"/>
+                          <rect fill="#ffffff" x="20" y="15" width="15" height="5" rx="1"/>
+                        </svg>
+                        <h5>Personal Injury Protection</h5>
+                        <p>This policy type provides coverage for medical expenses and lost wages for injuries sustained by you or your employees while operating the skid steer.</p>
+                    </div>
+                </div>
+    
+                <!-- Cargo Insurance (Updated Icon) -->
+                <div class="col-md-4 col-lg-4 mt-5">
+                    <div  class="insurance-card">
+                        <!-- New icon for cargo insurance -->
+                        <svg style="float: left;" class="brxe-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 57">
+                          <!-- Skid steer with bucket/fork -->
+                          <path fill="#000000" d="M10,40 h20 v-10 l5,-5 v-5 h-5 l-4,4 h-9 l-4,4 v12 z"/>
+                          
+                          <!-- Wheels/tracks -->
+                          <rect fill="#000000" x="8" y="40" width="24" height="4" rx="1"/>
+                          
+                          <!-- Cargo/boxes being lifted -->
+                          <rect fill="#ffffff" x="30" y="15" width="10" height="8" rx="1"/>
+                          <rect fill="#ffffff" x="33" y="23" width="4" height="12"/>
+                          
+                          <!-- Fork extension -->
+                          <path fill="#ffffff" d="M28,25 h12 M28,29 h12"/>
+                          
+                          <!-- Package symbols -->
+                          <rect fill="#ffffff" x="15" y="20" width="8" height="8"/>
+                          <path fill="#000000" d="M19,20 v8 M15,24 h8"/>
+                        </svg>
+                        <h5>Cargo Insurance</h5>
+                        <p>If your skid steer is used to transport materials or equipment, cargo insurance can cover damages to the transported items during transit.</p>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <section class="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <p>You must keep your skid steers safe and secure if you are operating a business which involves the use of
+                heavy machineries. But, why only choose us for skid loader insurance? We are Insurance Champions for
+                many Skid Steer Businesses! </p>
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <div class="feature row">
+
+                        <div class="col-10 rightc">
+                            <h5>Tailored Coverage</h5>
+                            <p>We customize insurance plans to match your specific needs, ensuring your assets and
+                                liabilities receive the right level of protection.</p>
+                        </div>
+                        <div class="col-2">
+                            <img src="assets/images/machinery.webp" style="width: 40px;" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="feature row">
+                        <div class="col-10 rightc">
+                            <h5>Expert Guidance</h5>
+                            <p>Our experienced team provides knowledgeable insights, guiding you towards the best
+                                insurance solutions for your business or personal requirements.</p>
+                        </div>
+                        <div class="col-2">
+                            <img src="assets/images/verified-2.webp" style="width: 40px;" alt="" srcset="">
+                        </div>
+
+                    </div>
+                    <div class="feature row">
+                        <div class="col-10 rightc">
+                            <h5>Personalized Service</h5>
+                            <p>With a customer-centric approach, we offer individual attention and dedicated support
+                                throughout your insurance journey.</p>
+                        </div>
+                        <div class="col-2">
+                            <img src="assets/images/process.webp" style="width: 40px;" alt="" srcset="">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="assets/images/earth-moving-insurance-300x196.png" alt="Earthmoving Equipment">
+                </div>
+                <div class="col-md-4">
+                    <div class="feature row">
+                        <div class="col-2">
+                            <img src="assets/images/anti-theft-system.webp" style="width: 40px;" alt="" srcset="">
+                        </div>
+                        <div class="col-10 leftc">
+                            <h5>Comprehensive Protection</h5>
+                            <p>Our policies encompass a wide range of risks, shielding you from financial losses due to
+                                accidents, damage, theft, and more.</p>
+                        </div>
+                    </div>
+                    <div class="feature row">
+                        <div class="col-2">
+                            <img src="assets/images/life-insurance.webp" style="width: 40px;" alt="" srcset="">
+                        </div>
+                        <div class="col-10 leftc">
+                            <h5>Quick Claim Settlements</h5>
+                            <p>We prioritize efficiency, ensuring that your claims are handled promptly for minimal
+                                disruption to your operations.</p>
+                        </div>
+                    </div>
+                    <div class="feature row">
+                        <div class="col-2">
+                            <img src="assets/images/technology.webp" style="width: 40px;" alt="" srcset="">
+                        </div>
+                        <div class="col-10 leftc">
+                            <h5>Trusted Partner</h5>
+                            <p>Plant Machinery Insurance is your reliable ally, committed to building long-term
+                                relationships based on integrity and exceptional service.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="insurance-section">
+        <div class="container">
+            <h2 class="text-center">HOW CAN PLANT MACHINERY HELP WITH SKID STEER INSURANCE? </h2>
+            <p class="text-center">
+                Whether you use your skid steer for construction, landscaping, or other purposes, our policies shield
+                you from unwanted events which can make a huge loss for your business!
+            </p>
+            <div class="row" style="align-items: center;">
+                <div class="col-lg-6">
+                    <ul>
+                        <li><strong>Equipment Breakdown Coverage</strong> – Our skid steer insurance includes protection
+                            against mechanical breakdowns and costly repairs, minimizing financial strain.</li>
+                        <li><strong>Loss of Use Coverage</strong> – In the event of skid steer damage or theft, our
+                            policies may cover rental expenses for a temporary replacement, keeping your projects on
+                            track.</li>
+                        <li><strong>Flexible Payment Options</strong> – Plant Machinery offers flexible payment plans,
+                            including monthly and quarterly options, to suit your budget and cash flow needs.</li>
+                        <li><strong>Customizable Policies</strong> – We understand that each business is unique, so our
+                            skid steer insurance allows you to customize coverage based on your specific requirements.
+                        </li>
+                        <li><strong>Experienced Claims Advocates</strong> – Our claims team is experienced in handling
+                            skid steer-related incidents, advocating on your behalf to ensure fair and prompt
+                            resolutions.</li>
+                        <li><strong>Industry Knowledge</strong> – With extensive knowledge of the construction and
+                            landscaping industries, we offer insights that help you make informed insurance decisions.
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="images-wrapper">
+                        <img src="assets/images/constrion.png" class="img-fluid" alt="Construction Image 1">
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <p class="text-note">
+                At Plant Machinery, our dedication to securing your skid steer investment goes beyond traditional
+                insurance policies, ensuring comprehensive protection and unparalleled support.
+            </p>
+        </div>
+    </section>
+
+   
+    <!-- Payment Options Section -->
+    <section class="payment-section">
+        <div class="container">
+            <h3 class="fw-bold">Customized Skid Steer Insurance Quotes for Your Unique Needs
+            </h3>
+            <p>
+                You might have some unique insurance needs for your skid steer business, and we understand that very
+                well. That’s why, at Plant Machinery Insurance, you can find customized skid steer insurance quotes for
+                your unique needs. Once you contact our team, you have to tell us about your business and its insurance
+                needs. After understanding your requirement, you will be sent a customized quotes which you can finalize
+                after analysing. You can include risk factors from a wide range of possibilities such as theft, accident
+                or any kind of unforeseen event. At Plant Machinery insurance, you can be assured that you get the right
+                and complete insurance coverage to protect your skid steer machineries and business.
+
+            </p>
+            <h3 class="fw-bold">Our Skid Steer Insurance Clients are our First Priority
+            </h3>
+            <p>
+                At Plant Machinery Insurance, our skid steer insurance clients are our top priority. From construction
+                companies to landscaping businesses, we understand the diverse requirements of our clients and work
+                diligently to provide comprehensive protection for their skid steer investments. Whether you need any
+                help with skid loader insurance policy selection, or claims processing, our team is always there to help
+                you with no questions asked. This is our guarantee that we will provide you with the utmost care for
+                your skid steer business, which your business really needs. As our client, you are our top priority and
+                we value your business and its unique needs. With Plant Machinery Insurance, you will feel completely
+                tension-free because your skid steers insurance needs are in perfect hands.
+
+            </p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Our Client Testimonials</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="testimonial">
+                                <span class="quote">“</span>
+                                <p>I’ve been a loyal customer of Plant Machinery Insurance for years, and they
+                                    consistently exceed my expectations. Their efficient claims processing and excellent
+                                    customer service make them my go-to for skid steer insurance. Their team truly cares
+                                    about their clients and goes above and beyond to ensure we are protected. I
+                                    confidently recommend Plant Machinery to anyone looking for reliable skid steer
+                                    insurance.</p>
+                                <p class="author">David Brown, Perth, WA</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="testimonial">
+                                <span class="quote">“</span>
+                                <p>Plant Machinery Insurance has been my reliable partner in protecting my skid steer.
+                                    Their comprehensive coverage and prompt customer support give me peace of mind
+                                    during every project. They go the extra mile to ensure that I have the right
+                                    coverage, and their team is always available to answer my questions. I can’t imagine
+                                    insuring my skid steer with anyone else.</p>
+                                <p class="author">Emily Chen, Sydney, NSW</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="testimonial">
+                                <span class="quote">“</span>
+                                <p>I made the right choice choosing Plant Machinery for my skid steer insurance. Their
+                                    knowledgeable team took the time to understand my business and provided me with a
+                                    customized insurance plan that perfectly suits my needs. The expertise and support I
+                                    received from them were outstanding. I trust Plant Machinery to protect my skid
+                                    steer, and I highly recommend their services to others.</p>
+                                <p class="author">Mark Thompson, Brisbane, QLD</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="testimonial">
+                                <span class="quote">“</span>
+                                <p>Plant Machinery Insurance provided exceptional coverage for my skid steer. When my
+                                    equipment was damaged in an accident, their claims team acted swiftly and
+                                    professionally, making the whole claims process stress-free. Their attention to
+                                    detail and personalized service truly set them apart. I feel confident knowing my
+                                    skid steer investment is protected with Plant Machinery Insurance!</p>
+                                <p class="author">Sarah Johnson, Melbourne, VIC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Faq Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="faq-item">
+                    <h2>
+                        <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
+                            aria-expanded="true" aria-controls="faq1">
+                            1. What types of skid steer equipment do you offer insurance for?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="collapse show" data-bs-parent="#faqAccordion">
+                        <div class="faq-body">
+                            At Plant Machinery Insurance, we provide thorough insurance protection for a variety of skid steer equipment, including wheeled skid steers, small skid steers, compact track loaders, and skid steer loaders. Our policies are designed to protect various models and sizes of skid steer machinery used in different industries such as construction, landscaping, and agriculture. Whether you own a single skid steer or a fleet of machines, we have tailored insurance solutions to meet your specific needs and ensure your valuable equipment is well-protected.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h2>
+                        <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                            2. Can I add additional coverage for attachments and accessories for my skid steer?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="collapse" data-bs-parent="#faqAccordion">
+                        <div class="faq-body">
+                            Absolutely! At Plant Machinery Insurance, we understand the importance of protecting your skid steer attachments and accessories. Our customizable policies allow you to add coverage for specialized equipment, tools, and accessories used with your skid steer. You may do this to ensure that all aspects of your skid steer operation are adequately protected against any risks and uncertainties, giving you complete peace of mind.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h2>
+                        <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                            3. Is there a waiting period for skid steer insurance coverage to become effective?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="collapse" data-bs-parent="#faqAccordion">
+                        <div class="faq-body">
+                            No, there is generally no waiting period for skid steer insurance coverage to become effective. Once you purchase the policy and the premium payment is processed, your skid steer will be covered immediately. This means you can start your projects with confidence, knowing that your valuable equipment is protected from the very start of your insurance policy.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h2>
+                        <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                            4. Can I switch my skid steer insurance provider to Plant Machinery Insurance mid-policy?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="collapse" data-bs-parent="#faqAccordion">
+                        <div class="faq-body">
+                            Yes, you have the flexibility to switch your skid steer insurance provider to Plant Machinery Insurance even if you are mid-policy with another company. We understand that your insurance requirements could change, and we are ready to help you out. Our team of experts will guide you through the process, ensuring a seamless transition to Plant Machinery Insurance, where you’ll receive our dedicated support and tailored coverage for your skid steer.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Company Info -->
+            <div class="col-md-4">
+                <h5>Plant, Equipment & Machinery Insurance</h5>
+                <p>Plant Machinery Insurance is your partner in Earthmoving protection. Experience tailored coverage,
+                    exceptional service, and peace of mind. Contact us today to secure your business's future.</p>
+            </div>
+            <!-- Quick Links -->
+            <div class="col-md-4 ps-5">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled fmenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="claims.html">Claims</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <ul class="list-unstyled contact-info">
+                    <li><i class="bi bi-geo-alt-fill"></i> Suite 16, Level 2, 1 Ricketts Road,<br> Mount Waverley, VIC 3149</li>
+                    <li><i class="bi bi-telephone-fill"></i> <a style="color: #fff ;" href="tel:1300 170 328">1300 170 328</a></li>
+                    <li><i class="bi bi-envelope-fill"></i> <a style="color: #fff;" href="mailto:info@ilinkinsurance.com.au">info@ilinkinsurance.com.au</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+  </footer>
+  <div class="footer-bottom">
+      All rights reserved.
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  </body>
+  </html>
+  
