@@ -264,7 +264,7 @@ form .btn-primary {
   padding: 10px;
 }
 .custom-card p{
-  text-align: left;
+  text-align: center;
 }
 
 .benefits-section {
@@ -1027,7 +1027,7 @@ form .btn-primary {
 .insurance-card p {
   font-size: 0.95rem;
   color: #555;
-  text-align: left;
+  text-align: center;
 }
 
 .background-pattern {
