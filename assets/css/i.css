@@ -7,11 +7,11 @@
     font-weight: bold;
     margin-bottom: 40px;
     text-align: center;
-    color: #fff;
+    color: black;
 }
 
 .i-form-section label {
-    color: #ddd;
+    color:black;
     font-size: 0.9rem;
 }
 
@@ -21,9 +21,9 @@
 
 .i-form-section .form-control,
 .i-form-section .form-select {
-    background-color: #333; /* Dark field background */
+    
     border: 1px solid #555; /* Border color */
-    color: #fff; /* Field text color */
+     /* Field text color */
 }
 
 .i-form-section .form-control::placeholder {

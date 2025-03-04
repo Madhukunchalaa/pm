@@ -3,170 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insurance Quote Form</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Contact Section</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
     <style>
+        :root {
+            --primary-color: #FDD500;
+            --dark-color: #333333;
+            --light-color: #f8f9fa;
+        }
+        
         body {
-            background-color: #f0f8ff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        .form-container {
-            max-width: 800px;
-            margin: 40px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        
+        .contact-section {
+            padding: 80px 0;
+            background-color: var(--light-color);
         }
-        label {
+        
+        .contact-heading {
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .contact-heading::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 4px;
+            background-color: var(--primary-color);
+            bottom: -10px;
+            left: 0;
+        }
+        
+        .contact-subtitle {
+            color: #666;
+            margin-bottom: 40px;
+        }
+        
+        .form-label {
             font-weight: 600;
+            color: var(--dark-color);
         }
-        .btn-custom {
-            background-color: #007bff;
-            color: white;
-            font-weight: bold;
-            padding: 10px 20px;
-            border-radius: 5px;
+        
+        .form-control {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
         }
-        .btn-custom:hover {
-            background-color: #0056b3;
+        
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.25rem rgba(253, 213, 0, 0.25);
         }
-        .section-divider {
-            margin: 30px 0;
-            border-top: 2px solid #eee;
+        
+        textarea.form-control {
+            min-height: 150px;
+        }
+        
+        .submit-btn {
+            background-color: var(--primary-color);
+            color: var(--dark-color) !important;
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 8px;
+            border: none;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .submit-btn:hover {
+            background-color: #e5c000;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-visual {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .contact-image {
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-height: 300px;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+        .contact-info {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 30px;
+        }
+        
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .icon-circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .info-title {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .info-content {
+            color: #666;
+            margin-bottom: 0;
+        }
+        
+        @media (max-width: 991px) {
+            .contact-visual {
+                margin-top: 50px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="form-container">
-            <h3 class="text-center mb-4">Quick Quote Insurance Form</h3>
-            <form>
-                <!-- Personal Information -->
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="name">Name <span class="text-danger">*</span></label>
-                        <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="address">Full Address <span class="text-danger">*</span></label>
-                        <input type="text" id="address" class="form-control" placeholder="Enter your address" required>
+    <section class="contact-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <h1 class="contact-heading">Get In Touch</h1>
+                    <p class="contact-subtitle">We're here to help. Reach out to us anytime.</p>
+                    
+                    <form>
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Your Name">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="phoneNumber" class="form-label">Your Number</label>
+                            <input type="tel" class="form-control" id="phoneNumber" placeholder="Your Phone Number">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" placeholder="What can we help you with?"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn submit-btn">Submit your Message</button>
+                    </form>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="contact-visual">
+                        <img src="/api/placeholder/600/300" alt="Contact us" class="img-fluid contact-image">
+                        
+                        <div class="contact-info">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="contact-info-item">
+                                        <div class="icon-circle">
+                                            <i class="bi bi-envelope-fill text-dark fs-4"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="info-title">Email</h5>
+                                            <p class="info-content">contact@example.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <div class="contact-info-item">
+                                        <div class="icon-circle">
+                                            <i class="bi bi-telephone-fill text-dark fs-4"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="info-title">Phone</h5>
+                                            <p class="info-content">+1 612 8684 777</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-12 mt-2">
+                                    <div class="contact-info-item">
+                                        <div class="icon-circle">
+                                            <i class="bi bi-geo-alt-fill text-dark fs-4"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="info-title">Address</h5>
+                                            <p class="info-content">123 Business Street, Suite 100, New York, NY 10001</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="contact">Contact Number <span class="text-danger">*</span></label>
-                        <input type="text" id="contact" class="form-control" placeholder="Enter your contact number" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="email">Email <span class="text-danger">*</span></label>
-                        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
-                    </div>
-                </div>
-
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="ctp">CTP Insurance start date/renewal date <span class="text-danger">*</span></label>
-                        <input type="date" id="ctp" class="form-control" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="customer">Customer Number <span class="text-danger">*</span></label>
-                        <input type="text" id="customer" class="form-control" placeholder="Enter customer number" required>
-                    </div>
-                </div>
-
-                <!-- Vehicle Information -->
-                <div class="section-divider"></div>
-                <h4 class="mb-4">Vehicle Details</h4>
-
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="plate">Plate Number <span class="text-danger">*</span></label>
-                        <input type="text" id="plate" class="form-control" placeholder="Enter plate number" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="vin">VIN number/Chassis number <span class="text-danger">*</span></label>
-                        <input type="text" id="vin" class="form-control" placeholder="Enter VIN/Chassis number" required>
-                    </div>
-                </div>
-
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="vehicle">Vehicle Type <span class="text-danger">*</span></label>
-                        <select id="vehicle" class="form-select" required>
-                            <option value="">Please Select</option>
-                            <option value="private">Private</option>
-                            <option value="commercial">Commercial</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="manufacture-year">Year of manufacture <span class="text-danger">*</span></label>
-                        <input type="text" id="manufacture-year" class="form-control" placeholder="Enter year of manufacture" required>
-                    </div>
-                </div>
-
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="make">Make of vehicle <span class="text-danger">*</span></label>
-                        <input type="text" id="make" class="form-control" placeholder="Enter make of vehicle" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="shape">Vehicle shape <span class="text-danger">*</span></label>
-                        <input type="text" id="shape" class="form-control" placeholder="Enter 3-letter code from registration" required>
-                    </div>
-                </div>
-
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="postcode">Garage Postcode <span class="text-danger">*</span></label>
-                        <input type="text" id="postcode" class="form-control" placeholder="Enter postcode" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="suburb">Garage Suburb <span class="text-danger">*</span></label>
-                        <input type="text" id="suburb" class="form-control" placeholder="Enter suburb" required>
-                    </div>
-                </div>
-
-                <!-- Insurance Details -->
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="customer-type">Customer Type <span class="text-danger">*</span></label>
-                        <select id="customer-type" class="form-select" required>
-                            <option value="">Please Select</option>
-                            <option value="individual">Individual / sole trader</option>
-                            <option value="company">Company</option>
-                            <option value="used car dealer">Used Car Dealer</option>
-                            <option value="fleet">Fleet</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="insurance-duration">Insurance Duration <span class="text-danger">*</span></label>
-                        <select id="insurance-duration" class="form-select" required>
-                            <option value="">Please Select</option>
-                            <option value="12 months">12 Months</option>
-                            <option value="6 months">6 Months</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="row mb-4">
-                    <div class="col-md-6">
-                        <label for="tax-credit">Input tax credit entitlement <span class="text-danger">*</span></label>
-                        <select id="tax-credit" class="form-select" required>
-                            <option value="">Please Select</option>
-                            <option value="yes">Yes</option>
-                            <option value="no">No</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12 text-end">
-                        <button type="submit" class="btn btn-custom">Submit Quote Request</button>
-                    </div>
-                </div>
-            </form>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
