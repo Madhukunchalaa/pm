@@ -8,12 +8,13 @@
     justify-content: center; /* Center content horizontally */
     background-color: #f8f9fa; /* Optional background color */
 }
-*{
-  font-family: sans-serif
-}
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+*{
+  font-family: sans-serif
+}
 
 body {
     font-size: 16px;
@@ -154,6 +155,7 @@ h6{
     font-weight: 500;
     color: #000;
 }
+
 
 .navbar-text .phone-number a{
     font-weight: 700;
@@ -526,7 +528,7 @@ form .btn-primary {
   }
 
   .info-section h4{
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .info-section .info-item {
@@ -534,7 +536,7 @@ form .btn-primary {
   }
 
   .info-section .info-item h4 {
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 600;
   }
 
@@ -1468,9 +1470,9 @@ form .btn-primary {
 
 
 .benefit-icon {
-  width: 36px !important;
-  height: 36px !important;
-  min-width: 36px !important; /* Ensures fixed width when text wraps */
+  width: 20px !important;
+  height: 20px !important;
+  min-width: 20px !important; /* Ensures fixed width when text wraps */
   transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
 
@@ -1484,7 +1486,7 @@ form .btn-primary {
   transform: scale(1.1);
 }
 .benefit-icon .bi-arrow-right-short {
-  font-size: 2.25rem !important;
+  font-size: 1.25rem !important;
 }
 
 
@@ -1709,3 +1711,45 @@ textarea.form-control {
   font-size: 14px;
   font-weight: bold;
 }
+
+.carousel {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.carousel-item img {
+  max-width: 200px;  /* Increased logo size */
+  max-height: 200px;
+  object-fit: contain;
+  margin: 0 15px;
+  transition: transform 0.3s ease;
+}
+.carousel-item img:hover {
+  transform: scale(1.1);  /* Add a hover effect */
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;  /* Smaller control areas */
+  background-color: rgba(0,0,0,0.3);  /* Semi-transparent background */
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50px;
+  border-radius: 0 10px 10px 0;
+}
+.carousel-control-next {
+  border-radius: 10px 0 0 10px;
+}
+@media (max-width: 768px) {
+  .carousel-item img {
+      max-width: 100px;
+      max-height: 100px;
+      margin: 0 10px;
+  }
+}
+
+

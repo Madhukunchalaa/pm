@@ -101,28 +101,34 @@
     </section>
 
     <!-- Carousel Section -->
-    <div class="logos">
-        <div class="logo_items">
-        <img src="assets/images/1-1-thumb.png">
-        <img src="assets/images/2-1.png">
-        <img src="assets/images/3-1.png">
-        <img src="assets/images/4-1.png">
-        <img src="assets/images/5-1.png">
-        <img src="assets/images/6-1.png">
-        <img src="assets/images/7-1.png">
-        
+    <div id="logoCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                    <img src="assets/images/1-1-thumb.png" class="d-block mx-2" width="200" alt="Logo 1">
+                    <img src="assets/images/2-1.png" class="d-block mx-2" width="200" alt="Logo 2">
+                    <img src="assets/images/3-1.png" class="d-block mx-2" width="200" alt="Logo 3">
+                    <img src="assets/images/4-1.png" class="d-block mx-2" width="200" alt="Logo 4">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <img src="assets/images/5-1.png" class="d-block mx-2" width="200" alt="Logo 5">
+                    <img src="assets/images/6-1.png" class="d-block mx-2" width="200" alt="Logo 6">
+                    <img src="assets/images/7-1.png" class="d-block mx-2" width="200" alt="Logo 7">
+                </div>
+            </div>
         </div>
-          <div class="logo_items">
-            <img src="assets/images/1-1-thumb.png">
-            <img src="assets/images/2-1.png">
-            <img src="assets/images/3-1.png">
-            <img src="assets/images/4-1.png">
-            <img src="assets/images/5-1.png">
-            <img src="assets/images/6-1.png">
-            <img src="assets/images/7-1.png">
-        
-        </div>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#logoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#logoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
 
    <!-- Footer Section -->
    <div id="footer"></div>

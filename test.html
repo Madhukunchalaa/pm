@@ -3,227 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Section</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <title>Logo Carousel</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        :root {
-            --primary-color: #FDD500;
-            --dark-color: #333333;
-            --light-color: #f8f9fa;
+        .carousel {
+            max-width: 100%;
+            margin: 0 auto;
         }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        .contact-section {
-            padding: 80px 0;
-            background-color: var(--light-color);
-        }
-        
-        .contact-heading {
-            font-weight: 700;
-            margin-bottom: 10px;
-            position: relative;
-            display: inline-block;
-        }
-        
-        .contact-heading::after {
-            content: '';
-            position: absolute;
-            width: 50%;
-            height: 4px;
-            background-color: var(--primary-color);
-            bottom: -10px;
-            left: 0;
-        }
-        
-        .contact-subtitle {
-            color: #666;
-            margin-bottom: 40px;
-        }
-        
-        .form-label {
-            font-weight: 600;
-            color: var(--dark-color);
-        }
-        
-        .form-control {
-            padding: 12px 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            transition: all 0.3s ease;
-        }
-        
-        .form-control:focus {
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 0.25rem rgba(253, 213, 0, 0.25);
-        }
-        
-        textarea.form-control {
-            min-height: 150px;
-        }
-        
-        .submit-btn {
-            background-color: var(--primary-color);
-            color: var(--dark-color) !important;
-            font-weight: 600;
-            padding: 12px 30px;
-            border-radius: 8px;
-            border: none;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .submit-btn:hover {
-            background-color: #e5c000;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        .contact-visual {
-            height: 100%;
+        .carousel-item {
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        
-        .contact-image {
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            max-height: 300px;
-            object-fit: cover;
-            width: 100%;
-        }
-        
-        .contact-info {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            margin-top: 30px;
-        }
-        
-        .contact-info-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        
-        .icon-circle {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: var(--primary-color);
-            display: flex;
-            align-items: center;
             justify-content: center;
-            margin-right: 15px;
-            flex-shrink: 0;
+            align-items: center;
+            padding: 20px 0;
         }
-        
-        .info-title {
-            font-weight: 600;
-            margin-bottom: 5px;
+        .carousel-item img {
+            max-width: 200px;  /* Increased logo size */
+            max-height: 200px;
+            object-fit: contain;
+            margin: 0 15px;
+            transition: transform 0.3s ease;
         }
-        
-        .info-content {
-            color: #666;
-            margin-bottom: 0;
+        .carousel-item img:hover {
+            transform: scale(1.1);  /* Add a hover effect */
         }
-        
-        @media (max-width: 991px) {
-            .contact-visual {
-                margin-top: 50px;
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 5%;  /* Smaller control areas */
+            background-color: rgba(0,0,0,0.3);  /* Semi-transparent background */
+            top: 50%;
+            transform: translateY(-50%);
+            height: 50px;
+            border-radius: 0 10px 10px 0;
+        }
+        .carousel-control-next {
+            border-radius: 10px 0 0 10px;
+        }
+        @media (max-width: 768px) {
+            .carousel-item img {
+                max-width: 100px;
+                max-height: 100px;
+                margin: 0 10px;
             }
         }
     </style>
 </head>
 <body>
-    <section class="contact-section">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <h1 class="contact-heading">Get In Touch</h1>
-                    <p class="contact-subtitle">We're here to help. Reach out to us anytime.</p>
-                    
-                    <form>
-                        <div class="mb-3">
-                            <label for="fullName" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="fullName" placeholder="Your Name">
-                        </div>
-                        
-                        <div class="mb-3">
-                            <label for="phoneNumber" class="form-label">Your Number</label>
-                            <input type="tel" class="form-control" id="phoneNumber" placeholder="Your Phone Number">
-                        </div>
-                        
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="email" placeholder="Your Email">
-                        </div>
-                        
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" placeholder="What can we help you with?"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn submit-btn">Submit your Message</button>
-                    </form>
+    <div id="logoCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                    <img src="/api/placeholder/200/200" class="d-block mx-2" alt="Logo 1">
+                    <img src="/api/placeholder/200/200" class="d-block mx-2" alt="Logo 2">
+                    <img src="/api/placeholder/200/200" class="d-block mx-2" alt="Logo 3">
+                    <img src="/api/placeholder/200/200" class="d-block mx-2" alt="Logo 4">
                 </div>
-                
-                <div class="col-lg-6">
-                    <div class="contact-visual">
-                        <img src="/api/placeholder/600/300" alt="Contact us" class="img-fluid contact-image">
-                        
-                        <div class="contact-info">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="contact-info-item">
-                                        <div class="icon-circle">
-                                            <i class="bi bi-envelope-fill text-dark fs-4"></i>
-                                        </div>
-                                        <div>
-                                            <h5 class="info-title">Email</h5>
-                                            <p class="info-content">contact@example.com</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-6">
-                                    <div class="contact-info-item">
-                                        <div class="icon-circle">
-                                            <i class="bi bi-telephone-fill text-dark fs-4"></i>
-                                        </div>
-                                        <div>
-                                            <h5 class="info-title">Phone</h5>
-                                            <p class="info-content">+1 612 8684 777</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-12 mt-2">
-                                    <div class="contact-info-item">
-                                        <div class="icon-circle">
-                                            <i class="bi bi-geo-alt-fill text-dark fs-4"></i>
-                                        </div>
-                                        <div>
-                                            <h5 class="info-title">Address</h5>
-                                            <p class="info-content">123 Business Street, Suite 100, New York, NY 10001</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <img src="/api/placeholder/200/200" class="d-block mx-2" alt="Logo 5">
+                    <img src="/api/placeholder/200/200" class="d-block mx-2" alt="Logo 6">
+                    <img src="/api/placeholder/200/200" class="d-block mx-2" alt="Logo 7">
                 </div>
             </div>
         </div>
-    </section>
+        <button class="carousel-control-prev" type="button" data-bs-target="#logoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#logoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
