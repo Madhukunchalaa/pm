@@ -252,6 +252,7 @@ h6{
     }
     .c-form .form-section{
       width: 100%;
+      margin-top: 8% !important;
     }
     .image-container img {
       height: 460px !important;
