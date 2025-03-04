@@ -193,12 +193,23 @@ h6{
     color: #fff;
   }
   .benefits .benefit {
-    background-color: #fff;
-    color: #333;
+    background: rgba(255, 255, 255, 0.1); /* More transparent */
+    color: #fff; /* White text for better contrast */
     border-radius: 10px;
     padding: 20px;
     text-align: center;
-  }
+    backdrop-filter: blur(15px); /* Stronger glass effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    transition: all 0.3s ease-in-out;
+}
+
+.benefits .benefit:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    background: rgba(255, 255, 255, 0.15); /* Slightly less transparent on hover */
+}
+
   .benefits .benefit img {
     width: 50px;
     height: 50px;
