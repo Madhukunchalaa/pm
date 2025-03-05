@@ -125,10 +125,20 @@
                 <input type="text" name="zip" class="form-control" placeholder="Zip Code *" required>
             </div>
             <div class="col-md-12">
+                <select class="form-control" name="select-insurance" required>
+                    <option value="">Please select insurance</option>
+                    <option value="earth-moving-insurance">Earth-Moving Insurance</option>
+                    <option value="skid-steers-insurance">Skid-Steers Insurance</option>
+                    <option value="bulldozer-insurance">Bulldozer Insurance</option>
+                    <option value="excavator-insurance">Excavator Insurance</option>
+                </select>
+            </div>
+            <div class="col-md-12">
                 <button type="submit" class="btn btn-primary" style="background-color: #F7C21C;">Submit</button>
             </div>
         </div>
     </form>
+    
     
   </div>
 </div>
@@ -446,7 +456,7 @@
   <div class="col-lg-6 col-md-12 info-section" style="margin-top: -80px;">
       <h4 class="hm fw-bold">Find Your Type Of Insurance Customized For You</h4>
       <div class="info-item d-flex align-items-center">
-          <div class="info-icon">
+          <div class="info-icon mb-5">
               <i class="bi bi-shield-check"></i>
           </div>
           <div>
@@ -455,7 +465,7 @@
           </div>
       </div>
       <div class="info-item d-flex align-items-center">
-          <div class="info-icon">
+          <div class="info-icon mb-5">
               <i class="bi bi-speedometer2"></i>
           </div>
           <div>
@@ -464,7 +474,7 @@
           </div>
       </div>
       <div class="info-item d-flex align-items-center">
-          <div class="info-icon">
+          <div class="info-icon mb-5">
               <i class="bi bi-file-earmark-check"></i>
           </div>
           <div>
@@ -477,13 +487,31 @@
   <div class="col-lg-6 col-md-12 form-section" id="form" style="margin-top: -80px;">
       <h4>Request A Quote</h4>
       <form>
-          <input type="text" class="form-control" name="name" placeholder="Name *" required>
-          <input type="email" class="form-control" name="email" placeholder="Email *" required>
-          <input type="text" class="form-control" name="phone" placeholder="Phone Number *" required>
-          <input type="text" class="form-control" name="state" placeholder="State *" required>
-          <input type="text" class="form-control" name="zip" placeholder="Zip Code *" required>
-          <button type="submit" class="btn"style="background-color: #F7C21C;">Submit</button>
-      </form>
+        <input type="text" class="form-control" name="name" placeholder="Name *" required>
+        <input type="email" class="form-control" name="email" placeholder="Email *" required>
+        <input type="text" class="form-control" name="phone" placeholder="Phone Number *" required>
+        <input type="text" class="form-control" name="state" placeholder="State *" required>
+        <input type="text" class="form-control" name="zip" placeholder="Zip Code *" required>
+        <select class="form-control" name="select-insurance" required>
+          <option value="">Please select insurance</option>
+          <option value="earth-moving-insurance">Earth-Moving Insurance</option>
+          <option value="skid-steers-insurance">Skid-Steers Insurance</option>
+          <option value="bulldozer-insurance">Bulldozer Insurance</option>
+          <option value="excavator-insurance">Excavator Insurance</option>
+      </select>
+    
+        <!-- Corrected dropdown field -->
+        <select class="form-control" name="select-insurance" required>
+            <option value="">Please select insurance</option>
+            <option value="earth-moving-insurance">Earth-Moving Insurance</option>
+            <option value="skid-steers-insurance">Skid-Steers Insurance</option>
+            <option value="bulldozer-insurance">Bulldozer Insurance</option>
+            <option value="excavator-insurance">Excavator Insurance</option>
+        </select>
+    
+        <button type="submit" class="btn" style="background-color: #F7C21C;">Submit</button>
+    </form>
+    
   </div>
 </div>
   <!-- Footer Section -->

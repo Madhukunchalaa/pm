@@ -1680,7 +1680,9 @@ textarea.form-control {
 .footer .fmenu li::before{
   content: "> ";
     color: #f7c21c;
-    font-size: larger;
+    font-size: medium;
+    font-weight: bold;
+    padding-right: 5px;
 }
 .footer .fmenu li a{
   color: #fff;
@@ -1763,4 +1765,19 @@ textarea.form-control {
   }
 }
 
+
+
+.logo-container{
+  background-color: white;
+  padding: 10px;
+ 
+}
+.logo-container img{
+  height: auto;
+  width: 100%;
+}
+.fmenu li{
+  margin-bottom: 10px;
+
+}
 
