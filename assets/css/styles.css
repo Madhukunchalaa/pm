@@ -272,7 +272,7 @@ select.form-control option {
     }
   }
 
-  @media (min-width: 400px ) and (max-width: 770px){
+  @media (min-width: 300px ) and (max-width: 770px){
     .benefits{
       width: 80% !important;
       justify-self: center;
