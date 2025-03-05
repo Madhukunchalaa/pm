@@ -112,7 +112,27 @@ h6{
     font-weight: 500;
     color: #000;
     padding: 8px 15px;
+    font-size: 15px;
 }
+.form-control::placeholder { 
+  color: #6c757d; /* Bootstrap default placeholder color */
+ 
+}
+
+select.form-control {
+  color: #6c757d !important; /* Match placeholder color */
+ 
+}
+
+/* Change color when user selects an option */
+select.form-control option {
+  color: black;
+  font-style: normal;
+}
+
+
+
+
 
 .navbar-nav .nav-item{
   margin: 0 15px ;
@@ -1313,16 +1333,17 @@ form .btn-primary {
 
 /* Submit Button */
 .i-form-section .btn {
-  background-color: #007bff;
-  color: white;
+  background-color:#F7C21C;
+  color:black;
   padding: 12px 20px;
   font-size: 16px;
   border-radius: 5px;
   transition: 0.3s;
+  margin-top: 10px;
 }
 
 .i-form-section .btn:hover {
-  background-color: #0056b3;
+  background-color: #F7C21C;
 }
 
 /* Responsive Design */
@@ -1413,6 +1434,7 @@ form .btn-primary {
   font-size: 20px;
   font-weight: 600;
   margin: 0 0 15px 0;
+  margin-top: 5%;
 }
 
 .service-text {
@@ -1678,7 +1700,7 @@ textarea.form-control {
   padding: 40px 20px;
 }
 .footer .fmenu li::before{
-  content: "> ";
+ 
     color: #f7c21c;
     font-size: medium;
     font-weight: bold;
@@ -1770,11 +1792,16 @@ textarea.form-control {
 .logo-container{
   background-color: white;
   padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
  
 }
 .logo-container img{
   height: auto;
-  width: 100%;
+  width: 60%;
+ 
 }
 .fmenu li{
   margin-bottom: 10px;
